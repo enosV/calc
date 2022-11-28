@@ -55,3 +55,22 @@ operator_btns.forEach((btn) => {
         }
     })
 })
+
+const remove_active = () => {
+    operator_btns.forEach((btn) => {
+        btn.classList.remove("active")
+    })
+}
+
+operand_btns.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+        remove_active();
+        e.currentTarget.classList.add("active")
+    })
+})
+
+operand_btns.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+        remove_active;
+    })
+})
